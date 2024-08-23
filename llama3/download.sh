@@ -12,8 +12,9 @@ set -e
 # read -p "Enter the URL from email: " PRESIGNED_URL
 # echo ""
 # read -p "Enter the list of models to download without spaces (8B,8B-instruct,70B,70B-instruct), or press Enter for all: " MODEL_SIZE
-PRESIGNED_URL = "https://llama3-1.llamameta.net/*?Policy=eyJTdGF0ZW1lbnQiOlt7InVuaXF1ZV9oYXNoIjoidHViaDAxc2tnOTBodzJzYmkwdXdnbWRnIiwiUmVzb3VyY2UiOiJodHRwczpcL1wvbGxhbWEzLTEubGxhbWFtZXRhLm5ldFwvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQ5MDAzMH19fV19&Signature=QnzMhtRR1M9O2u5XmX8qNa1ZfADUpF7xXDGBZvBAGhSLVwdQ8n3nSIzvKIK9y7PiiJkDWG1ylpvhpfvaVth4EyS6xAtCIhAx6CSK4B8Pi-i1hPrC2UxYJ3Dq3rfDCHsbi6-ifIVtZ3QRemqh7UKh473gYcaFBKVmN9yWqKScW6%7ELpn77HNJ9ESmbrAmpNNwkxg7GEO1xn7zXh6x9huuEf7DjWVAxgWdwioCDJOC-9S8-9EqHEkT%7E8xKclANMnefw-tQ19UDkixjweqRKAk%7EzNejryKC2BEPLsetrn159d3w-COQynmf1ZtTk7StuR-lUMmUlaF6yYMi-8SECrIY3%7Ew__&Key-Pair-Id=K15QRJLYKIFSLZ&Download-Request-ID=1183725979619952"
-MODEL_SIZE = "8B-instruct"
+PRESIGNED_URL="https://llama3-1.llamameta.net/*?Policy=eyJTdGF0ZW1lbnQiOlt7InVuaXF1ZV9oYXNoIjoidHViaDAxc2tnOTBodzJzYmkwdXdnbWRnIiwiUmVzb3VyY2UiOiJodHRwczpcL1wvbGxhbWEzLTEubGxhbWFtZXRhLm5ldFwvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcyNDQ5MDAzMH19fV19&Signature=QnzMhtRR1M9O2u5XmX8qNa1ZfADUpF7xXDGBZvBAGhSLVwdQ8n3nSIzvKIK9y7PiiJkDWG1ylpvhpfvaVth4EyS6xAtCIhAx6CSK4B8Pi-i1hPrC2UxYJ3Dq3rfDCHsbi6-ifIVtZ3QRemqh7UKh473gYcaFBKVmN9yWqKScW6%7ELpn77HNJ9ESmbrAmpNNwkxg7GEO1xn7zXh6x9huuEf7DjWVAxgWdwioCDJOC-9S8-9EqHEkT%7E8xKclANMnefw-tQ19UDkixjweqRKAk%7EzNejryKC2BEPLsetrn159d3w-COQynmf1ZtTk7StuR-lUMmUlaF6yYMi-8SECrIY3%7Ew__&Key-Pair-Id=K15QRJLYKIFSLZ&Download-Request-ID=1183725979619952"
+
+MODEL_SIZE="8B-instruct"
 
 TARGET_FOLDER="."             # where all files should end up
 mkdir -p ${TARGET_FOLDER}
